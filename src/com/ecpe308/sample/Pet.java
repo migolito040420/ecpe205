@@ -1,31 +1,25 @@
-package com.ecpe308.sample;
-
 public class Pet {
-    public String name, breed; //persian, labrador, golden retriever
-    public String pet_type;  //cat/dog
+    private String name;
+    private int age;
 
-    public String getName(){
+    public Pet(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
         return name;
     }
 
-    public String getBreed(){
-        return breed;
-    }
-
-    public String getPet_type(){
-        return pet_type;
-    }
-
-    public void setName (String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setBreed (String breed){
-        this.breed = breed; 
+    public int getAge() {
+        return age;
     }
-    
-    public void setPet_type (String pet_type){
-        this.pet_type= pet_type;
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
-
